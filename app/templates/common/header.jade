@@ -1,0 +1,14 @@
+block link
+-var menu = { 'Home': './', 'About': './about.html', 'For Sale': './forsale.html', 'News': './news.html', 'Contact': './contact.html'};
+
+header.header
+  .container
+    nav.menu
+      ul.menu__list
+        each val, key in menu
+          if selected === key
+            li.menu__item.current
+              a.menu__link(href=val)= key
+          else
+            li.menu__item
+              a.menu__link(href=val)= key

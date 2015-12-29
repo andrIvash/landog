@@ -1,0 +1,35 @@
+//_set.scss
+
+html, body {
+    height: 100%;
+    font: 1em/1.4;
+}
+
+.wrapper {
+   min-height: 100%;
+   height: auto !important;
+   position: relative ;
+}
+/* variables _________________________________________________________________*/
+  /* fonts*/
+  $roboto-cond: RobotoCondensed;
+  $roboto:  Roboto;
+
+
+/* clear _____________________________________________________________________*/
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.clearfix:after {
+    clear: both;
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+} 

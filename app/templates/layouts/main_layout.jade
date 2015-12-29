@@ -1,0 +1,16 @@
+doctype html
+html(lang="ru-RU")
+  include ../common/head.jade
+  body
+    <!--[if lt IE 7]>
+    <p class="browsehappy">Your are using <strong>old version</strong> of the browser. Please, <a href="http://browsehappy.com/">update</a> it.</p>
+    <![endif]-->
+    .wrapper
+      .main-content
+        //- Шапка
+        include ../common/header.jade
+        .container  
+          block content
+    include ../common/footer.jade  
+        
+         

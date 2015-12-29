@@ -1,0 +1,71 @@
+extends ../layouts/main_layout
+include ../common/mixin
+
+block link
+  -var selected = 'Home';
+
+block title
+  title LanDog
+
+block content
+  .logo
+    .logo__wrapper
+      img.logo__img
+      h1.logo__title
+
+  section.main
+    .news
+      h2.news__header news
+      ul.news__items
+        li.news__item
+          p.news__text
+            |Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, at.
+      a.news__link(href="") News Archive
+    
+    .about
+      h2.about__header about us
+      ul.about__items
+        li.about__item
+          p.about__text
+            |Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi accusantium ex, voluptatum nostrum ipsa corporis iste nesciunt illo rerum corrupti!
+          a.about__link(href="") read more
+
+  section.info
+    .sale
+      h2.sale__header puppies for sale
+      p.sale__header-desc Lorem ipsum dolor sit amet.
+      ul.sale__items
+        li.sale__item
+          .sale__img-wrapper
+            img.sale__img
+          h3.sale__text-header Lorem ipsum dolor sit amet.
+          p.sale__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, quis.
+          a.sale__link(href="") read more
+      ul.sale__links
+        li.sale__link-item
+          a.sale__link(href="") Lorem ipsum dolor sit amet.
+        li.sale__link-item
+          a.sale__link(href="") Lorem ipsum dolor sit amet.
+        li.sale__link-item
+          a.sale__link(href="") Lorem ipsum dolor sit amet.
+
+    .tips
+      h2.tips__header dog breeding tips
+      p.tips__header-desc Lorem ipsum dolor sit amet.
+      ul.tips__items
+        li.tips__item
+          .tips__img-wrapper
+            img.tips__img
+          h3.tips__text-header Lorem ipsum dolor sit amet.
+          p.tips__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, ad ipsa adipisci repellendus excepturi eaque.
+        a.tips__link(href="") read more
+      
+
+
+
+
+
+
+
+  
+
