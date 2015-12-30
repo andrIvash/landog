@@ -3,12 +3,14 @@ block link
 
 header.header
   .container
-    nav.menu
-      ul.menu__list
-        each val, key in menu
-          if selected === key
-            li.menu__item.current
-              a.menu__link(href=val)= key
-          else
-            li.menu__item
-              a.menu__link(href=val)= key
+
+nav.menu
+  .container
+    ul.menu__list
+      each val, key in menu
+        if selected === key
+          li.menu__item.current
+            a.menu__link(href=val)= key
+        else
+          li.menu__item
+            a.menu__link(href=val)= key

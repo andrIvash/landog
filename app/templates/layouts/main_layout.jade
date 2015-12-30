@@ -6,9 +6,9 @@ html(lang="ru-RU")
     <p class="browsehappy">Your are using <strong>old version</strong> of the browser. Please, <a href="http://browsehappy.com/">update</a> it.</p>
     <![endif]-->
     .wrapper
+      //- Шапка
+      include ../common/header.jade
       .main-content
-        //- Шапка
-        include ../common/header.jade
         .container  
           block content
     include ../common/footer.jade  
