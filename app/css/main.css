@@ -1,0 +1,268 @@
+@charset "UTF-8";
+html, body {
+  height: 100%;
+  font: 1em/1.4; }
+
+/* прибьём футер к низу*/
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  min-width: 1379px;
+  /* обязательно указать минимальную ширину примерно на 10 пикселей шире контейнера*/
+  height: auto !important;
+  overflow: hidden; }
+
+.wrapper:after {
+  content: "";
+  height: 61px;
+  display: block; }
+
+.footer {
+  height: 61px;
+  margin-top: -61px; }
+
+/* прибьём футер к низу - конец*/
+/* variables _________________________________________________________________*/
+/* fonts*/
+/* clear _____________________________________________________________________*/
+.clearfix:before, .main-info:before,
+.clearfix:after,
+.main-info:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.clearfix:after, .main-info:after {
+  clear: both; }
+
+html, body {
+  height: 100%;
+  font: 1em/1.4; }
+
+/* прибьём футер к низу*/
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  min-width: 1379px;
+  /* обязательно указать минимальную ширину примерно на 10 пикселей шире контейнера*/
+  height: auto !important;
+  overflow: hidden; }
+
+.wrapper:after {
+  content: "";
+  height: 61px;
+  display: block; }
+
+.footer {
+  height: 61px;
+  margin-top: -61px; }
+
+/* прибьём футер к низу - конец*/
+/* variables _________________________________________________________________*/
+/* fonts*/
+/* clear _____________________________________________________________________*/
+.clearfix:before, .main-info:before,
+.clearfix:after,
+.main-info:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.clearfix:after, .main-info:after {
+  clear: both; }
+
+.header {
+  position: relative;
+  min-height: 45px;
+  background-color: #f1f1f1;
+  position: relative; }
+
+.header__content {
+  min-height: 45px;
+  position: relative;
+  padding-bottom: 30px; }
+
+.header:before {
+  display: block;
+  content: "";
+  height: 45px;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  top: 100%;
+  background: #f6f6f6; }
+
+.header__content:after {
+  display: block;
+  content: "";
+  height: 45px;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  top: 100%;
+  background: url("../img/s.png") no-repeat -94px -211px; }
+
+html, body {
+  height: 100%;
+  font: 1em/1.4; }
+
+/* прибьём футер к низу*/
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  min-width: 1379px;
+  /* обязательно указать минимальную ширину примерно на 10 пикселей шире контейнера*/
+  height: auto !important;
+  overflow: hidden; }
+
+.wrapper:after {
+  content: "";
+  height: 61px;
+  display: block; }
+
+.footer {
+  height: 61px;
+  margin-top: -61px; }
+
+/* прибьём футер к низу - конец*/
+/* variables _________________________________________________________________*/
+/* fonts*/
+/* clear _____________________________________________________________________*/
+.clearfix:before, .main-info:before,
+.clearfix:after,
+.main-info:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.clearfix:after, .main-info:after {
+  clear: both; }
+
+.menu {
+  border-bottom: 10px solid #f1f1f1;
+  position: relative;
+  top: 13px; }
+
+.menu__list {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 10px;
+  z-index: 1; }
+
+.menu__item {
+  list-style: none;
+  display: inline-block;
+  min-width: 50px;
+  height: 20px;
+  margin-left: 10px; }
+
+.menu__item:first-child {
+  margin-left: 0px; }
+
+.menu__link {
+  display: block;
+  width: 100%;
+  height: 30px;
+  font-family: RobotoCondensed Arial;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000000; }
+
+.color1 {
+  border-bottom: 10px solid #14aef4; }
+
+.color2 {
+  border-bottom: 10px solid #febf24; }
+
+.color3 {
+  border-bottom: 10px solid #89c734; }
+
+.color4 {
+  border-bottom: 10px solid #ef141c; }
+
+.color5 {
+  border-bottom: 10px solid #832878; }
+
+.wrapper-inner {
+  width: 800px;
+  margin: 0 auto;
+  background: url("../img/s.png") no-repeat -5px -255px; }
+
+.container {
+  width: 625px;
+  margin: 0 auto; }
+
+.main-content {
+  width: 625px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 60px; }
+
+.logo {
+  position: relative;
+  width: 300px;
+  padding: 30px 10px;
+  background: url("../img/logo.png") no-repeat 50px 10px; }
+
+.logo__link {
+  display: block;
+  text-decoration: none; }
+
+.logo__title {
+  padding: 5px 10px; }
+
+.dog-img {
+  height: 599px;
+  width: 403px;
+  overflow: hidden;
+  position: absolute;
+  top: -70px;
+  left: 200px; }
+
+.dog-img__img {
+  height: 100; }
+
+.section-wrapper {
+  position: relative; }
+
+.section {
+  box-sizing: border-box;
+  border-radius: 50px; }
+
+.section_green {
+  background-color: #b0dd36;
+  opacity: 0.9;
+  position: relative;
+  box-shadow: 0 12px 0 rgba(255, 255, 255, 0.85);
+  z-index: 1; }
+
+.section_blue {
+  background-color: #54b1d2;
+  opacity: 0.9;
+  position: relative;
+  top: -20px; }
+
+.main-info {
+  margin: 0;
+  padding: 0;
+  position: relative; }
+
+.main-info__item {
+  list-style: none;
+  width: 260px;
+  float: left;
+  padding: 15px 25px;
+  font-size: 12px; }
+
+.main-info__header, .main-info__text {
+  margin-left: 60px; }
+
+.main-info__link {
+  margin-left: 74px; }

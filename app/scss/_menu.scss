@@ -1,0 +1,46 @@
+//_menu.scss
+@import "_set";
+
+.menu {
+  border-bottom: 10px solid $color-grey;
+  position:relative;
+  top:13px;
+
+}
+
+.menu__list {
+  margin: 0;
+  padding: 0; 
+  position:relative;
+  top:10px;
+  z-index: 1;
+ 
+}
+.menu__item {
+  list-style: none;
+  display: inline-block;
+  min-width: 50px;
+  height:20px;
+  margin-left: 10px;
+} 
+.menu__item:first-child {
+  margin-left: 0px;
+
+}
+.menu__link {
+  display:block;
+  width:100%;
+  height:30px;
+  font-family: $miriad Arial;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  color: $color-black;
+   
+ }
+
+ @for $i from 1 through 5 {
+  .color#{$i} {
+    border-bottom: 10px solid nth($color, $i); 
+  }
+} 

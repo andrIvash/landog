@@ -38,7 +38,7 @@ gulp.task('jade', function() {
 
 // sass
 gulp.task('sass', function() {
-  return gulp.src('app/scss/*.scss')
+  gulp.src('app/scss/*.scss')
     .pipe(plumber()) // plumber
     .pipe(sass({
       noCache: true,
@@ -46,6 +46,7 @@ gulp.task('sass', function() {
       lineNumbers: true
       //errLogToConsole: true
     }))
+
     //.pipe(sass.sync().on('error', sass.logError))
     .pipe(autoprefixer({
       browsers: ['last 2 versions', 'ie 8', 'ie 9'],

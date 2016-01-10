@@ -1,19 +1,105 @@
 //main.scss
 
-// @import 'set';
-// @import 'header';
-// @import 'top_menu';
-// @import 'main_menu';
-// @import 'slider';
-// @import 'section';
-// @import 'orderform';
+@import '_set.scss';
+@import '_header.scss';
+@import '_menu';
 
-//  .wrapper {
-//    min-width: 1349px;
-//  }
-//  .main-content {
+//----------------------------------стилизация оберток ------------------------//
+.wrapper-inner {
+   width: 800px;
+   margin:0 auto;    
+   background: url("../img/s.png") no-repeat -5px -255px;
+}
+
+ .container {
+    width: 625px;
+    margin: 0 auto;  
+ } 
+
+  .main-content {
+    width: 625px;
+    margin: 0 auto; 
+    position:relative;
+    padding-top: 60px; 
+}  
+ 
+// --------------------- стилизация логотипа ------------------- //
+
+ .logo {
+  position: relative;
+  width: 300px;
+  padding: 30px 10px;
+  background: url('../img/logo.png') no-repeat 50px 10px;
+  }  
+ .logo__link {
+  display: block;
+  text-decoration: none;
+ }
+.logo__title {
+  padding: 5px 10px; 
+
+}
+.logo__text {
   
-    
-//  }
-//  
+}
 
+//----------------------- стилизация основной картинки ---------------------//
+.dog-img {
+  height: 599px;
+  width: 403px;
+  overflow:hidden;
+  position: absolute;
+  top: -70px;
+  left:200px;
+}
+.dog-img__img {
+  height:100;
+}
+
+//-----------------------   стилизация секций контента  --------------------------//
+.section-wrapper {
+  position:relative;
+}
+.section {
+  box-sizing: border-box;
+  border-radius: 50px;
+  
+  
+}
+.section_green {
+  background-color: $color-green;
+  opacity: 0.9;
+  position:relative;
+  box-shadow: 0 12px 0 rgba(255, 255, 255, 0.85);
+  z-index: 1;
+}
+
+
+.section_blue {
+  background-color: $color-blue;
+  opacity: 0.9;
+  position:relative;
+  top: -20px;
+ 
+}
+
+
+.main-info {
+  margin: 0;
+  padding: 0; 
+  position:relative;
+  @extend .clearfix;
+}  
+.main-info__item {
+  list-style: none;
+  width: 260px;
+  float:left;
+  padding: 15px 25px;
+  font-size: 12px;
+}
+.main-info__header, .main-info__text {
+  margin-left:60px;
+}
+.main-info__link {
+ margin-left:74px; 
+}

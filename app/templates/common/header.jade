@@ -1,16 +1,21 @@
 block link
 -var menu = { 'Home': './', 'About': './about.html', 'For Sale': './forsale.html', 'News': './news.html', 'Contact': './contact.html'};
+-var index = 0;
 
 header.header
-  .container
-
+ .container
+  .header__content  
 nav.menu
   .container
     ul.menu__list
       each val, key in menu
+        -index++
         if selected === key
-          li.menu__item.current
+          li.menu__item.current(class='color' + index)
             a.menu__link(href=val)= key
         else
-          li.menu__item
-            a.menu__link(href=val)= key
+          li.menu__item(class='color' + index)
+            a.menu__link(href=val)= key    
+
+
+     
