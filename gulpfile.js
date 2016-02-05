@@ -76,7 +76,8 @@ gulp.task('server', ['jade', 'sass'], function () {
     port: 9000,
     server: {
       baseDir: 'app'
-    }
+    },
+    tunnel: true
   });  
 });
 
