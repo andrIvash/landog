@@ -9,24 +9,26 @@ block title
 
 block content
   .logo
-    a.logo__link(href="")
-      .logo__title Dog Kennels 
+    a.logo__link(href="#")
+      .logo__title 
+        .logo__title-first Dog
+        .logo__title-last Kennels 
     .logo__text professional dog breeding
   .dog-img
       img(src="../img/landog.png").dog-img__image
   .section-wrapper
     section.section.section_green
       ul.main-info
-        li.main-info__item
+        li.main-info__item.main-info__item_news
           .main-info__header news
           .main-info__text
               |Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, at.
-          a.main-info__link(href="") News Archive
-        li.main-info__item
+          a.main-info__link.links-more(href="#") News Archive
+        li.main-info__item.main-info__item_about
           .main-info__header about us
           .main-info__text
               |Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, at.
-          a.main-info__link(href="") Read More
+          a.main-info__link.links-more(href="#") Read More
        
 
     section.section.section_blue
@@ -37,22 +39,26 @@ block content
           .sales-info__inner
             ul.sale-list
               li.sale-list__item
-                .sale-list__img-wrap
-                  img(src=" ", alt="photo").sale-list__img
-                .sale-list__header  Lorem ipsum dolor.
-                .sale-list__text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, fuga.
+                .sale-list__left-block
+                  .sale-list__img-wrap
+                    img(src="../img/dog1.png", alt="photo").sale-list__img
+                .sale-list__right-block
+                  .sale-list__header  Lorem ipsum dolor.
+                  .sale-list__text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, fuga.
               li.sale-list__item
-                .sale-list__img-wrap
-                  img(src=" ", alt="photo").sale-list__img
-                .sale-list__header  Lorem ipsum dolor sit amet, consectetur.
-                .sale-list__text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro magnam doloribus explicabo provident,Beatae!
+                .sale-list__left-block
+                  .sale-list__img-wrap
+                    img(src="../img/dog2.png", alt="photo").sale-list__img
+                .sale-list__right-block
+                  .sale-list__header  Lorem ipsum dolor.
+                  .sale-list__text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, fuga.
             ul.sale-links
               li.sale-links__item
-                a(href="").sale-links__link  Lorem ipsum dolor sit amet.
+                a(href="#").sale-links__link  Lorem ipsum dolor sit amet.
               li.sale-links__item
-                a(href="").sale-links__link  Lorem ipsum dolor sit amet.
+                a(href="#").sale-links__link  Lorem ipsum dolor sit amet.
               li.sale-links__item
-                a(href="").sale-links__link  Lorem ipsum dolor sit amet.
+                a(href="#").sale-links__link  Lorem ipsum dolor sit amet.
 
         li.sales-info__item
           .sales-info__header Dog breeding tips
@@ -61,8 +67,8 @@ block content
             .tips
               .tips__item
                 .tips__wrap-img
-                  img(src=" ", alt="photo").tips__img
+                  img(src="../img/family.png", alt="photo").tips__img
                 .tips__header  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, placeat.
                 .tips__text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium ad ipsam quisquam numquam porro, error dolor laboriosam saepe aperiam rerum.
-                a.tips__link(href="") read more
+                a.tips__link.links-more(href="#") read more
 

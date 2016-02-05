@@ -2,33 +2,38 @@
 
 html, body {
     height: 100%;
-    font: 1em/1.4;
+    font-size: 1em; //16px;
+    line-height: 1.4;
 } 
 
 /* прибьём футер к низу*/
 .wrapper{
   position: relative;
-  min-height: 100%;
-  min-width: 1379px; /* обязательно указать минимальную ширину примерно на 10 пикселей шире контейнера*/
+  min-height: 100%; //850px
+  min-width: 100%;
+  //min-width: 1379px; /* обязательно указать минимальную ширину примерно на 10 пикселей шире контейнера*/
   height: auto!important;
   overflow: hidden;
-} 
+}  
 .wrapper:after {
   content: "";
-  height: 61px;
+  height: 3.8125em;//61px;
   display: block;
 }
 .footer{
-  height: 61px;
-  margin-top: -61px;  
+  height: 3.8125em;//61px;
+  margin-top: -3.8125em;//-61px;  
 }
 /* прибьём футер к низу - конец*/
 /* variables _________________________________________________________________*/
   /* fonts*/
-  $miriad: RobotoCondensed;
-  $daniel:  Roboto;
+  $daniel:  'daniel_blackregular';
+  $miriadpro: 'MyriadPro-Regular';
+  $header-blue: $miriadpro;
+  $mainfont: 'Standard0755-Regular';
 
-$color-grey: #f1f1f1; 
+$color-grey: #f1f1f1;
+$color-white: #fff; 
 $color-greylight: #f6f6f6;
 $color-black: #000000;
 $color-green: #b0dd36;

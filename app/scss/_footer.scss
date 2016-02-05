@@ -1,0 +1,15 @@
+//_footer.scss
+@import '_set.scss';
+
+.footer {
+  border-bottom: 1.875em solid $color-grey; //30px
+  min-width: 100%; //1379px;
+}
+.copyright {
+  margin-top: 1.25em;//20px;
+  color: #90948D;
+  font-family: $mainfont;
+  font-size: 0.625em;//10px;
+  font-weight: 400;
+  text-align: center;
+}

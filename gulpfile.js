@@ -43,7 +43,8 @@ gulp.task('sass', function() {
     .pipe(sass({
       noCache: true,
       style: "expanded",
-      lineNumbers: true
+      lineNumbers: true,
+      includePaths : ['app/scss/']
       //errLogToConsole: true
     }))
 

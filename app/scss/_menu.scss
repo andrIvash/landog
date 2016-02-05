@@ -2,9 +2,9 @@
 @import "_set";
 
 .menu {
-  border-bottom: 10px solid $color-grey;
+  border-bottom: 0.625em solid $color-grey; //10px
   position:relative;
-  top:13px;
+  top: 0.8125em;//13px; 
 
 }
 
@@ -12,16 +12,16 @@
   margin: 0;
   padding: 0; 
   position:relative;
-  top:10px;
+  top: 0.625em;//10px;
   z-index: 1;
  
 }
 .menu__item {
   list-style: none;
   display: inline-block;
-  min-width: 50px;
-  height:20px;
-  margin-left: 10px;
+  min-width: 3.125em;//50px;
+  height:1.25em;//20px;
+  margin-left: 0.625em;//10px;
 } 
 .menu__item:first-child {
   margin-left: 0px;
@@ -30,9 +30,10 @@
 .menu__link {
   display:block;
   width:100%;
-  height:30px;
-  font-family: $miriad Arial;
-  font-size: 12px;
+  height: 1.875em;//30px;
+  font-family: $miriadpro;
+  text-transform: uppercase;
+  font-size: 0.875em;//14px;
   font-weight: 700;
   text-decoration: none;
   color: $color-black;
@@ -41,6 +42,6 @@
 
  @for $i from 1 through 5 {
   .color#{$i} {
-    border-bottom: 10px solid nth($color, $i); 
+    border-bottom: 0.625em solid nth($color, $i); //10px
   }
 } 

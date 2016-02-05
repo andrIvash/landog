@@ -1,22 +1,22 @@
 //_header.scss
 @import "_set";
 .header {
-  position:relative;
-  min-height: 45px;
+ position:relative;
+ min-height: 2.8125em;//45px; 
  background-color: $color-grey;
  position:relative;
 
 }
 .header__content {
-  min-height: 45px;
+  min-height: 2.8125em;//45px;
   position:relative;
-  padding-bottom: 30px;
+  padding-bottom: 1.875em;//30px;
 }
 
 .header:before  {
   display: block;
   content:"";
-  height: 45px;
+  height: 2.8125em;//45px;
   width: 100%;
   position: absolute;
   overflow:hidden;
@@ -28,7 +28,7 @@
 .header__content:after {
   display: block;
   content:"";
-  height: 45px;
+  height: 2.8125em;//45px;
   width: 100%;
   position: absolute;
   overflow:hidden;
