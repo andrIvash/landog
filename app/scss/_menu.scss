@@ -5,6 +5,7 @@
   border-bottom: 0.625em solid $color-grey; //10px
   position:relative;
   top: 0.8125em;//13px; 
+ 
 
 }
 
@@ -14,6 +15,8 @@
   position:relative;
   top: 0.625em;//10px;
   z-index: 1;
+   width:360px;
+  
  
 }
 .menu__item {
@@ -39,9 +42,30 @@
   color: $color-black;
    
  }
+ .menu__link:hover {
+  color: $color-blue;
+ }
 
  @for $i from 1 through 5 {
   .color#{$i} {
     border-bottom: 0.625em solid nth($color, $i); //10px
   }
 } 
+
+.menu-hide {
+display: none;
+height: 48px;
+width: 48px;
+position: absolute;
+top: -0.65em;
+left: 2.5em;
+border: 2px solid $color-greydark;
+border-radius: 10px;
+overflow: hidden;
+}
+  
+
+.menu-hide__img {
+   height: 100%;
+   width: auto;
+}

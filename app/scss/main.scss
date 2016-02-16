@@ -231,13 +231,18 @@
 }
 .sale-list__img-wrap {
   width: 100%;//80px;
-  height: 40%;//80px;
   overflow:hidden;
-  border-radius: 20px;//20px;
+  
+
+   
 }
 .sale-list__img {
   width: 100%;
   height: auto;
+  border-radius: 20px;
+
+  
+
 }
 .sale-list__header {
   color: $color-black;
@@ -267,18 +272,18 @@
 }
 .tips__wrap-img {
   width: 80.64516129032258%;//250px;
-  height: 32.25806451612903%;//100px;
-  border-radius: 20px;//20px; 
+  
   margin-bottom: 0.625em;//10px;
   overflow:hidden;
 }
 .tips__img {
   width:100%;
   height:auto;
+  border-radius: 20px; 
 }
 .tips__header {
   color: $color-black;
-  font-size: 1em;//12px;
+  font-size: 0.9em;//12px;
   font-weight: 600;
   font-family: $mainfont;
   margin-bottom: 20px;
@@ -317,6 +322,9 @@
   padding-top: 7px;
   
 }
+.links-more:hover, .sale-links__link:hover {
+  color: $color-greydark;
+}
 //-----------------------   медиа-запросы  --------------------------//
 @media only screen and (max-width: 350px) {
   .wrapper {
@@ -324,7 +332,7 @@
   }
 }
 
-@media only screen and (max-width: 790px) {
+@media only screen and (max-width: 800px) {
    .main-info__item {
     width: 100%;
    }
@@ -337,6 +345,8 @@
     .tips__item, .tips__wrap-img  {
     width: 100%;
   }
+    
+
 }
 @media only screen and (max-width: 740px) {
    .dog-img {
@@ -368,5 +378,22 @@
   .sale-list__left-block, .sale-list__right-block {
     width: 100%;
   }
- 
+
+
+}
+@media only screen and (max-width: 420px) {
+  .menu {
+    min-height: 2em;
+  }
+  .menu-hide {
+    display:block;
+  }
+
+  .menu__item  {
+    margin-left: 0;
+    display: none;
+    width: 80%;
+    margin-bottom: .5em;
+  }
+
 }

@@ -153,7 +153,8 @@ html, body {
   padding: 0;
   position: relative;
   top: 0.625em;
-  z-index: 1; }
+  z-index: 1;
+  width: 360px; }
 
 .menu__item {
   list-style: none;
@@ -176,6 +177,9 @@ html, body {
   text-decoration: none;
   color: #000000; }
 
+.menu__link:hover {
+  color: #54b1d2; }
+
 .color1 {
   border-bottom: 0.625em solid #14aef4; }
 
@@ -190,6 +194,21 @@ html, body {
 
 .color5 {
   border-bottom: 0.625em solid #832878; }
+
+.menu-hide {
+  display: none;
+  height: 48px;
+  width: 48px;
+  position: absolute;
+  top: -0.65em;
+  left: 2.5em;
+  border: 2px solid #6F6262;
+  border-radius: 10px;
+  overflow: hidden; }
+
+.menu-hide__img {
+  height: 100%;
+  width: auto; }
 
 html, body {
   height: 100%;
@@ -443,13 +462,12 @@ html, body {
 
 .sale-list__img-wrap {
   width: 100%;
-  height: 40%;
-  overflow: hidden;
-  border-radius: 20px; }
+  overflow: hidden; }
 
 .sale-list__img {
   width: 100%;
-  height: auto; }
+  height: auto;
+  border-radius: 20px; }
 
 .sale-list__header {
   color: #000000;
@@ -477,18 +495,17 @@ html, body {
 
 .tips__wrap-img {
   width: 80.64516129032258%;
-  height: 32.25806451612903%;
-  border-radius: 20px;
   margin-bottom: 0.625em;
   overflow: hidden; }
 
 .tips__img {
   width: 100%;
-  height: auto; }
+  height: auto;
+  border-radius: 20px; }
 
 .tips__header {
   color: #000000;
-  font-size: 1em;
+  font-size: 0.9em;
   font-weight: 600;
   font-family: "Standard0755-Regular";
   margin-bottom: 20px; }
@@ -517,11 +534,14 @@ html, body {
   padding-left: 25px;
   padding-top: 7px; }
 
+.links-more:hover, .sale-links__link:hover {
+  color: #6F6262; }
+
 @media only screen and (max-width: 350px) {
   .wrapper {
     width: 350px; } }
 
-@media only screen and (max-width: 790px) {
+@media only screen and (max-width: 800px) {
   .main-info__item {
     width: 100%; }
   .sales-info__item {
@@ -550,3 +570,14 @@ html, body {
     float: none; }
   .sale-list__left-block, .sale-list__right-block {
     width: 100%; } }
+
+@media only screen and (max-width: 420px) {
+  .menu {
+    min-height: 2em; }
+  .menu-hide {
+    display: block; }
+  .menu__item {
+    margin-left: 0;
+    display: none;
+    width: 80%;
+    margin-bottom: .5em; } }
